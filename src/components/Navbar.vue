@@ -1,6 +1,6 @@
 <template>
 <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg" type="dark" class="Nav">
         <div class="container">
         <b-navbar-brand href="#">
             <b-img src="https://raw.githubusercontent.com/faqihakih/Img/master/plugin.png" fluid alt="Responsive image" width="175" height="50"></b-img>
@@ -35,7 +35,10 @@ export default {
 
 <style scoped>
   .nav-collapse{
-      color: white;
+      color: white !important;
       font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .Nav{
+      background-color: #1b1a1f;
   }
 </style>
