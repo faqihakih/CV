@@ -14,6 +14,7 @@
             <b-nav-item href="#">Tentang</b-nav-item>
             <b-nav-item href="#">Klien</b-nav-item>
             <b-nav-item href="#">Produk</b-nav-item>
+            <b-nav-item href="#">Komunitas</b-nav-item>
             <b-nav-item href="#">Kontak</b-nav-item>
         </b-navbar-nav>
         </b-collapse>
