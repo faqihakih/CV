@@ -39,13 +39,26 @@ export default {
 *{
     background-color:  #1b1a1f;
     justify-content: space-between;
+    font-family: 'Gilroy-Bold',sans-serif;
 }
+ @font-face {
+    font-family: "Gilroy-Light";
+    src: url('/assets/Gilroy-Light.otf');
+  }
+  @font-face {
+    font-family: "Gilroy-Bold";
+    src: url('/assets/Gilroy-ExtraBold.otf');
+  }
 .logo >img{
     height: 35px;
     width: auto;
 }
 .header{
     color: #ffffff !important;
+}
+navbar-item{
+  color: #ffffff !important;
+
 }
  
 </style>

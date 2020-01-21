@@ -12,15 +12,12 @@
                 <b-col md="6">
                     <div class="Dev">
                     <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
-                    src="https://raw.githubusercontent.com/faqihakih/Img/master/mobile_dev.png" fluid alt="">
+                    src="https://raw.githubusercontent.com/faqihakih/Img/master/mobile_dev.png" fluid alt="HOME">
                     </b-img>
                     </div>
                 </b-col>
                 </b-row>
             </b-container>
-            <div class="container">
-            
-            </div>
         </b-jumbotron>
     </div>
 </template>
@@ -37,16 +34,17 @@ export default {
 <style scoped>
     @font-face {
     font-family: "Gilroy-Light";
-    src: url('../assets/Gilroy-Light.otf');
+    src: url('/assets/Gilroy-Light.otf');
   }
   @font-face {
     font-family: "Gilroy-Bold";
-    src: url('../assets/Gilroy-ExtraBold.otf');
+    src: url('/assets/Gilroy-ExtraBold.otf');
   }
     .jumbotron{
         background-color: #1B1A1F;
         color: white;
         font-family: 'Gilroy', sans-serif;
+        padding-top: 150px;
     }
     h1{
         font-size: 64px;
@@ -56,19 +54,20 @@ export default {
         font-family: 'Gilroy-Light', sans-serif;
         margin-left: 100px;
     }
-    .full {
+    .Home p{
+        margin-top: 40px;
+    }
+    /* .full {
     width: 100%;
     height: auto;
-    }
+    } */
     img {
     width: auto;
     height: auto;
     opacity: 0.3;
     filter: alpha(opacity=30); /* For IE8 and earlier */
     }
-    .Dev{
-        
-    }
+
 
     /* Mobile Css */
     @media (min-width: 186px) and (max-width: 979px) {
@@ -78,10 +77,10 @@ export default {
     .Home{
         margin-left: -10px;
     }
-    .full {
+    /* .full {
     width: 100%;
     height: auto;
-    }
+    } */
     img {
     width: 300px;
     height: 250px;
