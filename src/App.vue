@@ -3,6 +3,8 @@
     <Nav/>
     <Home/>
     <Team/>
+    <About/>
+    <Klient/>
   </div>
 </template>
 
@@ -10,11 +12,13 @@
 import Nav from './components/Navbar'
 import Home from './components/Home'
 import Team from './components/Team'
+import About from './components/About'
+import Klient from './components/Klien'
 
 export default {
   name: 'app',
   components: {
-    Nav,Home,Team
+    Nav,Home,Team,About,Klient
   },
 }
 </script>

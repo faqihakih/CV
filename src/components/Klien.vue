@@ -1,6 +1,23 @@
 <template>
-    <div class="Team">
-        <div class="container teks">
+  <div class="Client">
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      
+
+      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+      <b-carousel-slide img-blank img-blank-color="#232428">
+       <div class="teks">
             <h1>Tim</h1>
         </div>
         <b-card-group class="deck">
@@ -37,84 +54,48 @@
             <h3>Faqih</h3> <h5>Zada</h5> <p>Web Dev</p>
         </div>
           </b-card-group>
-          <a href="#"><h4>Lihat Semua Tim</h4></a>
-    </div>    
+      </b-carousel-slide>
+      <!-- Text slides with image -->
+      <b-carousel-slide img-blank img-blank-color="#232428"
+      ><div class="teks">
+            <h1>Tim</h1>
+        </div>
+        </b-carousel-slide>
+
+      <!-- Slides with custom text -->
+      <b-carousel-slide img-blank img-blank-color="#232428">
+        <h1>Hello world!</h1>
+      </b-carousel-slide>
+    </b-carousel>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'Team',
-  props: {
-    msg: String
+  export default {
+    data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    }
   }
-}
 </script>
 
 <style scoped>
 @font-face {
-font-family: "Gilroy-Light";
-src: url('/assets/Gilroy-Light.otf');
-}
-@font-face {
-font-family: "Gilroy-Bold";
-src: url('/assets/Gilroy-ExtraBold.otf');
-}
-.Team{
+    font-family: "Gilroy-Bold";
+    src: url('/assets/Gilroy-ExtraBold.otf');
+    }
+.Client{
     margin-top: -45px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     background-color: #232428;
-    height: max-content;
+    /* height: max-content; */
     padding-bottom: 10px;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
-h4{
-    /* margin-left: -20px !important; */
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 30px !important;
-}
-/* h5{
-    margin-left: -15px;
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif;
-    margin-top: 8px !important;
-} */
-.text p{
-    /* margin-left: -15px; */
-    /* margin-top: 8px !important; */
-    font-size: 16px;
-    color: white;
-    font-family: 'Gilroy-Light', sans-serif;
-}
-.text{
-    margin-top: 50px !important;
-    margin-left: -15px;
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif;
-}
-.teks{
-    color: white;
-    font-family: 'Gilroy-Bold', sans-serif;
-    margin-top: 8px !important;
-    margin-top: 30px;
-    padding-top: 90px;
-}
-img{
-    border-radius: 10px !important;
-    width: 100%;
-    height: auto;
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
-    /* margin-left: 30px; */
-    /* margin-top: 40px; */
-}
-.deck{
-    /* margin-left: 200px; */
-    margin-top: 30px;
-    justify-content: center;
-}
+
 @media (min-width: 186px) and (max-width: 979px) {
   * {
     text-align: center;

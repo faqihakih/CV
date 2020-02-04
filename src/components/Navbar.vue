@@ -40,6 +40,7 @@ export default {
     background-color:  #1b1a1f;
     justify-content: space-between;
     font-family: 'Gilroy-Bold',sans-serif;
+    width: auto;
 }
  @font-face {
     font-family: "Gilroy-Light";
