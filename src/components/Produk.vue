@@ -1,84 +1,161 @@
 <template>
-    <div>
-        <b-jumbotron class="jumbotron jumbotron-fluid">
-            <b-container fluid="md">
-                    <div class="Home">
-                        <h1>Produk</h1>
-                        <img src="/assets/ux.png" alt="Produk">
-                        <p>PLUGIN adalah perusahaan pengembangan perangkat <br>
-                        lunak yang berlokasi di Tegal, Indonesia yang berfokus <br>
-                        pada membantu startup untuk meningkatkan bisnis <br>
-                        dengan menggunakan teknologi terbaru dan <br>
-                        mengeksplorasi ide-ide baru. Layanan kami meliputi: <br>
-                        membuat MVP(Produk yang layak minimum), <br>
-                        membangun aplikasi seluler, memperluas tim yang ada <br>
-                        dan meluncurkan fitur baru untuk startup.</p>
-                    </div>
-            </b-container>
-        </b-jumbotron>
-    </div> 
+  <div class="Product">
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#1B1A1F"
+      img-width="1024"
+      img-height="350"
+      style="text-shadow: 1px 1px 2px #333;"
+    >
+      <!-- Text slides with image -->
+      <div class="container teks">
+        <h1>Produk</h1>
+      </div>
+      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+        <b-card-group class="deck row">
+          <div class="col-6">
+            <b-img
+              :class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="/assets/logo.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-6">
+            <div class="deskripsi">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
+              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
+              <p v-if="readMoreActivated" v-html="longText"></p>
+            </div>
+          </div>
+        </b-card-group>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+        <b-card-group class="deck row">
+          <div class="col-6">
+            <b-img
+              :class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="/assets/logo.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-6">
+            <div class="deskripsi">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
+              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
+              <p v-if="readMoreActivated" v-html="longText"></p>
+            </div>
+          </div>
+        </b-card-group>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+        <b-card-group class="deck row">
+          <div class="col-6">
+            <b-img
+              :class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="/assets/logo.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-6">
+            <div class="deskripsi">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
+              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
+              <p v-if="readMoreActivated" v-html="longText"></p>
+            </div>
+          </div>
+        </b-card-group>
+      </b-carousel-slide>
+    </b-carousel>
+  </div>
 </template>
 
 <script>
 export default {
-    name:'Produk',
-    props: {
-        msg: String
+  name: "Produk",
+  props: {
+    msg: String
+  },
+  data(){
+        return {
+            longText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?`,
+            readMoreActivated: false
+        }
+    },
+    methods: {
+        activateReadMore(){
+            this.readMoreActivated = true;
+        },
     }
-}
+};
 </script>
 
 <style  scoped>
-
-
-
-    img{
-        float: left;
-        height: 220px;
-        width: auto;
-        margin-right: 50px;
-        margin-top: 40px;
-    }
-    @font-face {
-    font-family: "Gilroy-Light";
-    src: url('/assets/Gilroy-Light.otf');
-  }
-  @font-face {
-    font-family: "Gilroy-Bold";
-    src: url('/assets/Gilroy-ExtraBold.otf');
-  }
-    .jumbotron{
-        background-color:  #1B1A1F;
-        color: white;
-        font-family: 'Gilroy', sans-serif;
-        padding-top: 100px;
-    }
-    h1{
-        color: white;
-        font-family: 'Gilroy-Bold', sans-serif;
-        margin-top: 8px !important;
-        font-family: 'Gilroy-Bold', sans-serif;
-    }
-    .Home{
-        font-family: 'Gilroy-Light', sans-serif;
-        margin-left: 10px;
-    }
-    .Home p{
-        margin-top: 60px;
-        margin-bottom: 100px;
-    }
-
-    
-
-    /* Mobile Css */
-    @media (min-width: 186px) and (max-width: 979px) {
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/assets/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/assets/Gilroy-ExtraBold.otf");
+}
+.deck {
+  padding-bottom: 150px;
+}
+.deskripsi {
+  color: white;
+  font-family: "Gilroy-Light", sans-serif;
+}
+.teks {
+  padding-top: 50px;
+  margin-top: 50px;
+  color: white;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+/* Mobile Css */
+@media (min-width: 186px) and (max-width: 979px) {
   * {
     text-align: center;
-    }
-    .Home{
-        margin-left: -10px;
-    }
-
+    padding-bottom: 40px;
+    height: 100%;
+  }
+  .deck {
+    /* padding-top: 10px; */
+    margin-bottom: -270px;
+  }
+  .deck img{
+    /* padding-top: 10px; */
+    margin-top: 40px;
+  }
+  .teks {
+    /* padding-top: -50px; */
+    margin-top: -30px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .tombol{
+      margin-top: -70px;
+      /* padding-top: 20px; */
+      font-size: 12px;
+  }
+  .deskripsi p{
+      padding-top: -50px;
+      text-align: left;
+  }
 }
-
 </style>

@@ -5,19 +5,25 @@
         </div>
         <b-card-group class="deck">
         <div class="responsif">
-            <img src="/assets/logo.png" alt="Photos" style="float:left"> 
+            <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+            src="/assets/logo.png" fluid alt="Team">
+            </b-img>
         </div>
         <div class="text">
             <h3>Dhiya</h3> <h5>Reksa</h5> <p>CEO</p>
         </div>
-                <div class="responsif">
-            <img src="/assets/logo.png" alt="Photos" style="float:left"> 
-        </div>
+            <div class="responsif">
+                <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+                src="/assets/logo.png" fluid alt="Team">
+                </b-img>
+            </div>
         <div class="text">
             <h3>Izzatur</h3> <h5>Royhan</h5> <p>Backend</p>
         </div>
-                <div class="responsif">
-            <img src="/assets/logo.png" alt="Photos" style="float:left"> 
+        <div class="responsif">
+            <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+            src="/assets/logo.png" fluid alt="Team">
+            </b-img>
         </div>
         <div class="text">
             <h3>Preiyudha</h3> <h5>Akadita</h5> <p>Mobile Dev</p>
@@ -25,13 +31,17 @@
           </b-card-group>
           <b-card-group class="deck">
         <div class="responsif">
-            <img src="/assets/logo.png" alt="Photos" style="float:left"> 
+            <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+            src="/assets/logo.png" fluid alt="Team">
+            </b-img>
         </div>
         <div class="text">
             <h3>Nurul</h3> <h5>Chotimah</h5> <p>Backend</p>
         </div>
-                <div class="responsif">
-            <img src="/assets/logo.png" alt="Photos" style="float:left"> 
+        <div class="responsif">
+            <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+            src="/assets/logo.png" fluid alt="Team">
+            </b-img>
         </div>
         <div class="text">
             <h3>Faqih</h3> <h5>Zada</h5> <p>Web Dev</p>
@@ -61,7 +71,7 @@ src: url('/assets/Gilroy-ExtraBold.otf');
 }
 .Team{
     margin-top: -45px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     background-color: #232428;
     height: max-content;
     padding-bottom: 10px;
@@ -101,9 +111,9 @@ h4{
     margin-top: 30px;
     padding-top: 90px;
 }
-img{
+.deck img{
     border-radius: 10px !important;
-    width: 100%;
+    width: auto;
     height: auto;
     opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
@@ -114,6 +124,7 @@ img{
     /* margin-left: 200px; */
     margin-top: 30px;
     justify-content: center;
+    
 }
 @media (min-width: 186px) and (max-width: 979px) {
   * {

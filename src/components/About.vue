@@ -39,9 +39,8 @@ export default {
     .jumbotron{
         background-color: #1B1A1F;
         color: white;
-        font-family: 'Gilroy', sans-serif;
         height: 600px;
-    
+        font-family: 'Gilroy-Light', sans-serif;
     }
     h1{
         margin-top: 50px !important;
@@ -52,7 +51,7 @@ export default {
     .About{
         font-family: 'Gilroy-Light', sans-serif;
         /* margin-left: 10px; */
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
 
     
