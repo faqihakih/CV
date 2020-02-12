@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-    <h5>&copy; Pelita Utama Gaharu <span>2020</span></h5>
+    <footer><strong>&copy; Pelita Utama Gaharu </strong>2020</footer>
     </div>
 </template>
 
@@ -29,15 +29,15 @@ export default {
     text-align: center;
     padding-top: 18px;
 }
-h5{
+footer{
 margin-bottom: -8px;
 /* background-color: #1B1A1F; */
 color: white;
-font-weight: bold;
-font-family: "Gilroy-Bold", sans-serif;
+/* font-weight: bold; */
+font-family: "Gilroy-Light", sans-serif;
 }
-span{
-    font-weight: lighter;
-    font-family: "Gilroy-Light", sans-serif;
+strong{
+/* font-weight: bold; */
+font-family: "Gilroy-Bold", sans-serif;
 }
 </style>
