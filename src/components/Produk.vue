@@ -28,8 +28,7 @@
           </div>
           <div class="col-6">
             <div class="deskripsi">
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
-              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <p v-if="!readMoreActivated">{{longText.slice(0, 80)}}</p>
               <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
               <p v-if="readMoreActivated" v-html="longText"></p>
             </div>
@@ -49,8 +48,7 @@
           </div>
           <div class="col-6">
             <div class="deskripsi">
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
-              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <p v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
               <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
               <p v-if="readMoreActivated" v-html="longText"></p>
             </div>
@@ -70,8 +68,7 @@
           </div>
           <div class="col-6">
             <div class="deskripsi">
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?</p> -->
-              <p class="des" v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
+              <p v-if="!readMoreActivated">{{longText.slice(0, 60)}}</p>
               <b-button variant="outline-primary" class="tombol" v-if="!readMoreActivated" @click="activateReadMore" href="#">Read More</b-button>
               <p v-if="readMoreActivated" v-html="longText"></p>
             </div>

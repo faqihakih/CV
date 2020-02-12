@@ -6,6 +6,8 @@
     <About/>
     <Klient/>
     <Product/>
+    <Kontak/>
+    <Footer/>
   </div>
 </template>
 
@@ -16,11 +18,13 @@ import Team from './components/Team'
 import About from './components/About'
 import Klient from './components/Klien'
 import Product from './components/Produk'
+import Kontak from './components/Kontak'
+import Footer from './components/Footer'
 
 export default {
   name: 'app',
   components: {
-    Nav,Home,Team,About,Klient,Product
+    Nav,Home,Team,About,Klient,Product,Kontak,Footer
   },
 }
 </script>
