@@ -15,11 +15,11 @@
       <div class="container teks">
         <h1>Produk</h1>
       </div>
-      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+      <b-carousel-slide img-blank background="#1B1A1F">
         <b-card-group class="deck row">
           <div class="col-6">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -35,11 +35,11 @@
           </div>
         </b-card-group>
       </b-carousel-slide>
-      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+      <b-carousel-slide img-blank background="#1B1A1F">
         <b-card-group class="deck row">
           <div class="col-6">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -55,11 +55,11 @@
           </div>
         </b-card-group>
       </b-carousel-slide>
-      <b-carousel-slide img-blank background="#1B1A1F" class="Slider">
+      <b-carousel-slide img-blank background="#1B1A1F">
         <b-card-group class="deck row">
           <div class="col-6">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -80,6 +80,8 @@
 </template>
 
 <script>
+// import detail from '../views/detail'
+
 export default {
   name: "Produk",
   props: {
@@ -87,6 +89,7 @@ export default {
   },
   data(){
         return {
+            slide: 0,
             longText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate?

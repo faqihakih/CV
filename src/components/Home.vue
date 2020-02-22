@@ -11,7 +11,7 @@
                 </b-col>
                 <b-col md="6">
                     <div class="Dev">
-                    <b-img :class="full" @click="fullWidthImage = !fullWidthImage" 
+                    <b-img class="full" @click="fullWidthImage = !fullWidthImage" 
                     src="https://raw.githubusercontent.com/faqihakih/Img/master/mobile_dev.png" fluid alt="HOME">
                     </b-img>
                     </div>

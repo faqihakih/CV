@@ -18,7 +18,7 @@
         <b-card-group class="deck row">
           <div class="col-3">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -27,7 +27,7 @@
           </div>
           <div class="col-3">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -36,7 +36,7 @@
           </div>
           <div class="col-3">
               <b-img
-                :class="full"
+                class="full"
                 @click="fullWidthImage = !fullWidthImage"
                 src="/assets/logo.png"
                 fluid
@@ -45,47 +45,7 @@
           </div>
           <div class="col-3">
               <b-img
-                :class="full"
-                @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
-                fluid
-                alt="Klien"
-              ></b-img>
-          </div>
-        </b-card-group>
-      </b-carousel-slide>
-      <b-carousel-slide img-blank background="#232428" class="Slider">
-        <b-card-group class="deck row">
-          <div class="col-3">
-            <b-img
-              :class="full"
-              @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
-              fluid
-              alt="Klien"
-            ></b-img>
-          </div>
-          <div class="col-3">
-            <b-img
-              :class="full"
-              @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
-              fluid
-              alt="Klien"
-            ></b-img>
-          </div>
-          <div class="col-3">
-              <b-img
-                :class="full"
-                @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
-                fluid
-                alt="Klien"
-              ></b-img>
-          </div>
-          <div class="col-3">
-              <b-img
-                :class="full"
+                class="full"
                 @click="fullWidthImage = !fullWidthImage"
                 src="/assets/logo.png"
                 fluid
@@ -98,7 +58,7 @@
         <b-card-group class="deck row">
           <div class="col-3">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -107,7 +67,7 @@
           </div>
           <div class="col-3">
             <b-img
-              :class="full"
+              class="full"
               @click="fullWidthImage = !fullWidthImage"
               src="/assets/logo.png"
               fluid
@@ -116,7 +76,7 @@
           </div>
           <div class="col-3">
               <b-img
-                :class="full"
+                class="full"
                 @click="fullWidthImage = !fullWidthImage"
                 src="/assets/logo.png"
                 fluid
@@ -125,7 +85,47 @@
           </div>
           <div class="col-3">
               <b-img
-                :class="full"
+                class="full"
+                @click="fullWidthImage = !fullWidthImage"
+                src="/assets/logo.png"
+                fluid
+                alt="Klien"
+              ></b-img>
+          </div>
+        </b-card-group>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank background="#232428" class="Slider">
+        <b-card-group class="deck row">
+          <div class="col-3">
+            <b-img
+              class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="/assets/logo.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-3">
+            <b-img
+              class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="/assets/logo.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-3">
+              <b-img
+                class="full"
+                @click="fullWidthImage = !fullWidthImage"
+                src="/assets/logo.png"
+                fluid
+                alt="Klien"
+              ></b-img>
+          </div>
+          <div class="col-3">
+              <b-img
+                class="full"
                 @click="fullWidthImage = !fullWidthImage"
                 src="/assets/logo.png"
                 fluid
@@ -143,7 +143,12 @@ export default {
   name: "Klient",
   props: {
     msg: String
-  }
+  },
+  data(){
+        return {
+            slide: 0,
+        }
+    }
 };
 </script>
 

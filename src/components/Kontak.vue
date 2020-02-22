@@ -52,23 +52,15 @@
                         </div>
                     </b-col>
                 </b-row>
-                <b-ul class="sci">
-                    <b-li>
-                        <a href="https://github.com/plugintegal" target="_blank">
-                            <i class="fa fa-medium"><span>Plugin.com</span></i>
-                        </a>
-                    </b-li>
-                    <b-li>
-                        <a href="https://www.instagram.com/officialplugin/" target="_blank">
-                            <i class="fa fa-instagram"><span>Official/plugin.com</span></i>
-                        </a>
-                    </b-li>
-                    <b-li>
-                        <a href="https://www.youtube.com/channel/UCW0p5Y6cNZ34G1LkY46xeLg" target="_blank">
-                            <i class="fa fa-youtube"><span>Official/plugin.com</span></i>
-                        </a>
-                    </b-li>
-                </b-ul><br>
+                    <a href="https://github.com/plugintegal" target="_blank" class="fa fa-medium">
+                        <span>Plugin.com</span>
+                    </a>
+                    <a href="https://www.instagram.com/officialplugin/" target="_blank" class="fa fa-instagram">
+                        <span>Official/plugin.com</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCW0p5Y6cNZ34G1LkY46xeLg" target="_blank" class="fa fa-youtube">
+                        <span>Official/plugin.com</span>
+                    </a>
             </b-container>
         </b-jumbotron>
     </div>
@@ -167,28 +159,13 @@
         font-weight: bold;
         color: white;
     }
-    .sci {
-        justify-content: center;
-        align-items: bottom;
-        align-content: center;
-        padding-bottom: 10px;
-        text-align: center !important;
-    }
-    .sci li {
-        list-style: none;
-        margin: 20px 20px;
-        justify-content: center;
-        align-content: center;
-        text-align: center !important;
-    }
-    .sci li a:hover {
-        color: #000;
-    }
-    .fa {
-        color: white;
-        margin-left: 40px;
+    .fa{
         margin-top: 40px;
+        justify-content: space-around;
+        margin-left: 80px;
     }
+    
+    
     /* Mobile Css */
     @media (min-width: 186px) and (max-width: 979px) {
         * {
@@ -210,6 +187,22 @@
         -webkit-box-shadow: -1px 1px 11px 4px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -1px 1px 11px 4px rgba(0, 0, 0, 0.75);
         box-shadow: -1px 1px 11px 4px rgba(0, 0, 0, 0.75);
+        }
+        .tombol{
+        margin-top: 30px;
+        background: #1B1A1F;
+        color: white;
+        font-family: 'Gilroy-light', sans-serif;
+        width: auto;
+        height: auto;
+        border: 2px solid#1B1A1F;
+        border-radius: 0.6em;
+        }
+        .fa{
+        margin-top: 10px;
+        justify-content: space-around;
+        margin-left: 20px;
+        padding-top: 20px;
         }
     }
 </style>
