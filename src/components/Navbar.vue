@@ -11,12 +11,12 @@
     
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto nav-item">
-        <b-nav-item href="#">Tim</b-nav-item>
-        <b-nav-item href="#">Tentang</b-nav-item>
-        <b-nav-item href="#">Klien</b-nav-item>
-        <b-nav-item href="#">Produk</b-nav-item>
+        <b-nav-item href="#team">Tim</b-nav-item>
+        <b-nav-item href="#about">Tentang</b-nav-item>
+        <b-nav-item href="#client">Klien</b-nav-item>
+        <b-nav-item href="#produk">Produk</b-nav-item>
         <b-nav-item href="#">Komunitas</b-nav-item>
-        <b-nav-item href="#">Kontak</b-nav-item>
+        <b-nav-item href="#kontak">Kontak</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
     </div>

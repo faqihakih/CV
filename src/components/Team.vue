@@ -1,6 +1,6 @@
 <template>
     <div class="Team">
-        <div class="container teks">
+        <div class="container teks" id="team">
             <h1>Tim</h1>
         <div class="tahu">
         <div class="circle"></div>
@@ -83,7 +83,13 @@
             <div class="circle15"></div>
             <div class="circle16"></div>
           </div>
+          <div class="view">
           <a href="#"><h4>Lihat Semua Tim</h4></a>
+          </div>
+          <div class="wave">
+            <b-img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhLS0gR2VuZXJhdG9yOiBHcmF2%0D%0AaXQuaW8gLS0+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xh%0D%0AdGUiIHZpZXdCb3g9IjAgMTIxNi43ODggNzMzLjU2NiAzODMuMjEyIiB3aWR0aD0iNzMzLjU2NiIg%0D%0AaGVpZ2h0PSIzODMuMjEyIj48ZyBpZD0iR2Vsb21iYW5nIDIiPjxnIG9wYWNpdHk9IjAuMiI+PGxp%0D%0AbmVhckdyYWRpZW50IGlkPSJfbGdyYWRpZW50XzE2IiB4MT0iMTA0LjA5NDk1MTcxNjA4NjA3JSIg%0D%0AeTE9Ii0xMTQuODczMjYwNzM3MzI5NDUlIiB4Mj0iMzcuNDI0MjM3ODMzNzk0NDM2JSIgeTI9IjEx%0D%0AMi40OTE5NTc3MjU2NTExOSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3Atb3BhY2l0eT0iMSIgc3R5%0D%0AbGU9InN0b3AtY29sb3I6cmdiKDI1NSwyNTUsMjU1KSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3Rv%0D%0AcC1vcGFjaXR5PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjMsMjMsMjkpIi8+PC9saW5lYXJH%0D%0AcmFkaWVudD48cGF0aCBkPSIgTSA3MzMuNTY2IDE2MDAgUSA3MDcuNTM4IDE1NzYuODUgNjkwLjQx%0D%0ANyAxNTQ0Ljg3NCBDIDYwMi40NzEgMTM4MC42MjkgNTM0LjczNiAxMzI3LjQ4MiA0MjQuODc5IDEy%0D%0AOTMuODQ4IEMgMzE1LjAyMSAxMjYwLjIxNCAxNTUuNjQyIDEyNzQuNzczIDgwLjIxMSAxMzE2LjYx%0D%0ANyBDIDU4Ljc0NSAxMzI4LjUyNSAzMC44MDIgMTM0NC4yNjIgMCAxMzYwLjA3NCBMIDAgMTM2MC4w%0D%0ANzQgTCAwIDE0NTcuODc2IEMgMTE1LjkyMiAxNDI3LjM5NSAyNTQuMTYyIDEzODcuNTUyIDM2OC4z%0D%0AMTYgMTQ4My42MDcgQyA0MjQuNjExIDE1MzAuOTc3IDQ2My43NTEgMTU2OS4zNDcgNTAwLjI3OCAx%0D%0ANjAwIEwgNzMzLjU2NiAxNjAwIFogIiBmaWxsPSJ1cmwoI19sZ3JhZGllbnRfMTYpIi8+PC9nPjxn%0D%0AIG9wYWNpdHk9IjAuMiI+PGxpbmVhckdyYWRpZW50IGlkPSJfbGdyYWRpZW50XzE3IiB4MT0iMTA0%0D%0ALjA5NDk1MTcxNjA4NjA3JSIgeTE9Ii0xMTQuODczMjYwNzM3MzI5NDUlIiB4Mj0iMzcuNDI0MjM3%0D%0AODMzNzk0NDM2JSIgeTI9IjExMi40OTE5NTc3MjU2NTExOSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0%0D%0Ab3Atb3BhY2l0eT0iMSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDI1NSwyNTUsMjU1KSIvPjxzdG9w%0D%0AIG9mZnNldD0iMTAwJSIgc3RvcC1vcGFjaXR5PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2IoMjMs%0D%0AMjMsMjkpIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSIgTSA1NzIuMjAzIDE2MDAgUSA1NjIu%0D%0AODY5IDE1ODIuMDEyIDU1Ni43NjcgMTU2MS4yNDMgQyA0OTkuNzM5IDEzNjcuMTM1IDQ0MS42NDkg%0D%0AMTMwMC43NzIgMzM3LjI4MyAxMjUyLjcyIEMgMjM4Ljc3NiAxMjA3LjM2NiA4Ny40NTUgMTIwNi42%0D%0AODUgMCAxMjQwLjkxMSBMIDAgMTI0MC45MTEgTCAwIDEzNzkuNzMgQyA4OC44NTkgMTM3MC44MTYg%0D%0AMTc3Ljg3OSAxMzgxLjY4OSAyNDMuNTU1IDE0NjIuNjg1IEMgMjg4LjUyIDE1MTguMTM5IDMxOS42%0D%0AMjQgMTU2My4xMzQgMzQ4Ljk4MiAxNjAwIEwgNTcyLjIwMyAxNjAwIFogIiBmaWxsPSJ1cmwoI19s%0D%0AZ3JhZGllbnRfMTcpIi8+PC9nPjwvZz48L3N2Zz4="></b-img>
+          </div>
+          
     </div>    
 </template>
 
@@ -110,9 +116,16 @@ src: url('/assets/Gilroy-ExtraBold.otf');
     /* padding-left: 50px; */
     background-color: #232428;
     height: max-content;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
-
+.wave{
+  margin-top : -390px;
+  /* padding-bottom: -5px; */
+}
+.view{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
 h4{
     /* margin-left: -20px !important; */
     color: white;
@@ -289,7 +302,7 @@ h4{
 .bulat{
     position: absolute;
     right: 15%;
-    bottom: -115%;
+    bottom: -90%;
 }
 @media (min-width: 186px) and (max-width: 979px) {
   * {
@@ -302,6 +315,9 @@ h4{
 }
 .tahu{
     display: none;
+}
+.wave{
+  display: none;
 }
 }
 </style>

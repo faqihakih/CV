@@ -1,9 +1,12 @@
 <template>
-    <div>
+    <div id="kontak">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous" />
         <b-jumbotron class="jumbotron jumbotron-fluid Kontak">
+            <div class="wave">
+                    <b-img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhLS0gR2VuZXJhdG9yOiBHcmF2%0D%0AaXQuaW8gLS0+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xh%0D%0AdGUiIHZpZXdCb3g9IjAgNDAwMCA2NjcuNzE5IDMzOS4yODMiIHdpZHRoPSI2NjcuNzE5IiBoZWln%0D%0AaHQ9IjMzOS4yODMiPjxnIGlkPSJHZWxvbWJhbmcgNiI+PGcgb3BhY2l0eT0iMC4yIj48bGluZWFy%0D%0AR3JhZGllbnQgaWQ9Il9sZ3JhZGllbnRfNCIgeDE9IjEwNC4wOTQ5NTE3MTYwODYwNyUiIHkxPSIt%0D%0AMTE0Ljg3MzI2MDczNzMyOTQ1JSIgeDI9IjM3LjQyNDIzNzgzMzc5NDQzNiUiIHkyPSIxMTIuNDkx%0D%0AOTU3NzI1NjUxMTklIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLW9wYWNpdHk9IjEiIHN0eWxlPSJz%0D%0AdG9wLWNvbG9yOnJnYigyNTUsMjU1LDI1NSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3Atb3Bh%0D%0AY2l0eT0iMSIgc3R5bGU9InN0b3AtY29sb3I6cmdiKDIzLDIzLDI5KSIvPjwvbGluZWFyR3JhZGll%0D%0AbnQ+PHBhdGggZD0iIE0gMCA0MzE2Ljk5OCBDIDE1MC41MzggNDM1NS41NjMgMjMwLjA0NyA0MzQy%0D%0ALjA5OSAzMjIuNjg2IDQyOTEuODQyIEMgNDIzLjY3NCA0MjM3LjA1OCA1MjQuOTk2IDQxMTMuMTcy%0D%0AIDU0OC4wMTggNDAzMC4wNDIgQyA1NTAuNTAzIDQwMjEuMDY4IDU1My4yNDggNDAxMS4wNDQgNTU2%0D%0ALjM1NyA0MDAwIEwgNTU2LjM1NyA0MDAwIEwgNDIzLjg4NyA0MDAwIEMgMzc2Ljk1NCA0MDYwLjY0%0D%0ANCAzMTYuNTEyIDQxMDkuOTk5IDIyNi45OCA0MTE4LjQ5OCBDIDEyNi4wMzIgNDEyOC4wODEgNjAu%0D%0AMTE4IDQxMjYuNDAzIDAgNDEzOC4yMDMgTCAwIDQzMTYuOTk4IFogIiBmaWxsPSJ1cmwoI19sZ3Jh%0D%0AZGllbnRfNCkiLz48L2c+PGcgb3BhY2l0eT0iMC4yIj48bGluZWFyR3JhZGllbnQgaWQ9Il9sZ3Jh%0D%0AZGllbnRfNSIgeDE9IjEwNC4wOTQ5NTE3MTYwODYwNyUiIHkxPSItMTE0Ljg3MzI2MDczNzMyOTQ1%0D%0AJSIgeDI9IjM3LjQyNDIzNzgzMzc5NDQzNiUiIHkyPSIxMTIuNDkxOTU3NzI1NjUxMTklIj48c3Rv%0D%0AcCBvZmZzZXQ9IjAlIiBzdG9wLW9wYWNpdHk9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOnJnYigyNTUs%0D%0AMjU1LDI1NSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3Atb3BhY2l0eT0iMSIgc3R5bGU9InN0%0D%0Ab3AtY29sb3I6cmdiKDIzLDIzLDI5KSIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iIE0gMCA0%0D%0AMTgyLjAwNSBRIDE5LjkwOSA0MTg4LjAxOCAzOS41MjIgNDE5OC41MDEgQyAyMTcuOTQ1IDQyOTMu%0D%0AODczIDMwNS45OTQgNDI5OC45NTEgNDEzLjQxNiA0MjU4LjE4OCBDIDUyMC44MzkgNDIxNy40MjYg%0D%0ANjM0LjA0NSA0MDk5LjIzMiA2NjQuMDk2IDQwMTAuNzEyIEMgNjY1LjI1NSA0MDA3LjI5NyA2NjYu%0D%0ANDU5IDQwMDMuNzM4IDY2Ny43MTkgNDAwMCBMIDY2Ny43MTkgNDAwMCBMIDQ4Ny4wMjUgNDAwMCBD%0D%0AIDQ0NC4xNzkgNDAzMS41MzYgMzkzLjExMyA0MDUwLjI3IDMyOS4zNDcgNDA0NC4xNzMgQyAxNzIu%0D%0ANDM2IDQwMjkuMTcyIDk5LjI1MSA0MDAxLjcxMSAwIDQwMzYuODg4IEwgMCA0MTgyLjAwNSBaICIg%0D%0AZmlsbD0idXJsKCNfbGdyYWRpZW50XzUpIi8+PC9nPjwvZz48L3N2Zz4="></b-img>
+                </div>
             <b-container fluid="md">
                 <h1>Hubungi Kami</h1>
                 <b-row>
@@ -164,7 +167,11 @@
         justify-content: space-around;
         margin-left: 80px;
     }
-    
+    .wave{
+        margin-top : -63px;
+        /* margin-left : 648px; */
+        position: absolute;
+    }
     
     /* Mobile Css */
     @media (min-width: 186px) and (max-width: 979px) {
@@ -176,7 +183,7 @@
         background: #232428;
         color: white;
         height: auto;
-        margin-top: -40px;
+        margin-top: -43px;
         }
         .card {
         margin-left: auto;;
@@ -204,5 +211,8 @@
         margin-left: 20px;
         padding-top: 20px;
         }
+        .wave{
+        display: none;
+    }
     }
 </style>

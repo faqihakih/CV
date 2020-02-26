@@ -1,9 +1,10 @@
 <template>
     <div class="detail">
         <div id="detail">
+            <b-container>
         <b-card-group class="deck row">
-            <div class="col-md-6">
-                <b-img class="full" @click="fullWidthImage = !fullWidthImage" src="/assets/logo.png" fluid alt="Klien">
+            <div class="col-md-6 full">
+                <b-img @click="fullWidthImage = !fullWidthImage" src="/assets/logo.png" fluid alt="Klien">
                 </b-img>
             </div>
             <div class="col-md-6">
@@ -16,6 +17,7 @@
                 </div>
             </div>
         </b-card-group>
+        </b-container>
         </div>
     </div>
 </template>
@@ -27,7 +29,20 @@
 </script>
 
 <style scoped>
+    @font-face {
+    font-family: "Gilroy-Light";
+    src: url("/assets/Gilroy-Light.otf");
+    }
     * {
         background: #1B1A1F;
+    }
+    .deskripsi{
+        color: white;
+        font-family: "Gilroy-Light", sans-serif;
+    }
+    .full{
+        text-align: center;
+        justify-content: center;
+        align-self: center;
     }
 </style>
