@@ -172,8 +172,7 @@ h4{
 .deck{
     /* margin-left: 200px; */
     margin-top: 30px;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .circle {
   margin-top: -55px;

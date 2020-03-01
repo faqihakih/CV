@@ -23,7 +23,7 @@
             <b-img
               class="full"
               @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
+              src="https://raw.githubusercontent.com/faqihakih/Img/master/acer.png"
               fluid
               alt="Klien"
             ></b-img>
@@ -32,7 +32,7 @@
             <b-img
               class="full"
               @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
+              src="https://raw.githubusercontent.com/faqihakih/Img/master/gigabyte.png"
               fluid
               alt="Klien"
             ></b-img>
@@ -41,7 +41,7 @@
               <b-img
                 class="full"
                 @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/indosat.png"
                 fluid
                 alt="Klien"
               ></b-img>
@@ -50,47 +50,7 @@
               <b-img
                 class="full"
                 @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
-                fluid
-                alt="Klien"
-              ></b-img>
-          </div>
-        </b-card-group>
-      </b-carousel-slide>
-      <b-carousel-slide img-blank background="#232428" class="Slider">
-        <b-card-group class="deck row">
-          <div class="col-3">
-            <b-img
-              class="full"
-              @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
-              fluid
-              alt="Klien"
-            ></b-img>
-          </div>
-          <div class="col-3">
-            <b-img
-              class="full"
-              @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
-              fluid
-              alt="Klien"
-            ></b-img>
-          </div>
-          <div class="col-3">
-              <b-img
-                class="full"
-                @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
-                fluid
-                alt="Klien"
-              ></b-img>
-          </div>
-          <div class="col-3">
-              <b-img
-                class="full"
-                @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/intel.png"
                 fluid
                 alt="Klien"
               ></b-img>
@@ -103,7 +63,7 @@
             <b-img
               class="full"
               @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
+              src="https://raw.githubusercontent.com/faqihakih/Img/master/nvida.png"
               fluid
               alt="Klien"
             ></b-img>
@@ -112,7 +72,7 @@
             <b-img
               class="full"
               @click="fullWidthImage = !fullWidthImage"
-              src="/assets/logo.png"
+              src="https://raw.githubusercontent.com/faqihakih/Img/master/telkom.png"
               fluid
               alt="Klien"
             ></b-img>
@@ -121,7 +81,7 @@
               <b-img
                 class="full"
                 @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/lenovo.png"
                 fluid
                 alt="Klien"
               ></b-img>
@@ -130,7 +90,47 @@
               <b-img
                 class="full"
                 @click="fullWidthImage = !fullWidthImage"
-                src="/assets/logo.png"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/acer.png"
+                fluid
+                alt="Klien"
+              ></b-img>
+          </div>
+        </b-card-group>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank background="#232428" class="Slider">
+        <b-card-group class="deck row">
+          <div class="col-3">
+            <b-img
+              class="full"
+              @click="fullWidthImage = !fullWidthImage"
+              src="https://raw.githubusercontent.com/faqihakih/Img/master/gigabyte.png"
+              fluid
+              alt="Klien"
+            ></b-img>
+          </div>
+          <div class="col-3">
+              <b-img
+                class="full"
+                @click="fullWidthImage = !fullWidthImage"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/indosat.png"
+                fluid
+                alt="Klien"
+              ></b-img>
+          </div>
+          <div class="col-3">
+              <b-img
+                class="full"
+                @click="fullWidthImage = !fullWidthImage"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/intel.png"
+                fluid
+                alt="Klien"
+              ></b-img>
+          </div>
+          <div class="col-3">
+              <b-img
+                class="full"
+                @click="fullWidthImage = !fullWidthImage"
+                src="https://raw.githubusercontent.com/faqihakih/Img/master/telkom.png"
                 fluid
                 alt="Klien"
               ></b-img>
@@ -168,7 +168,7 @@ export default {
   font-family: "Gilroy-Bold", sans-serif;
 }
 .deck {
-  padding-bottom: 150px;
+  padding-bottom: 225px;
 }
 .teks {
   padding-top: 50px;
@@ -191,7 +191,7 @@ export default {
   }
   .deck {
     padding-top: 10px;
-    margin-bottom: -100px;
+    margin-bottom: -160px;
   }
   .teks {
   /* padding-top: -50px; */
