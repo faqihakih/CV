@@ -28,10 +28,10 @@
           <div class="col-6">
             <b-img
               class="full"
-              @click="fullWidthImage = !fullWidthImage"
+              click="fullWidthImage = !fullWidthImage"
               :src="`http://192.168.18.45:8000/${pro.gambar}`"
               fluid
-              alt="Klien"
+              alt="Product"
             ></b-img>
           </div>
           <div class="col-6">
@@ -42,7 +42,7 @@
                 class="tombol"
                 v-if="!readMoreActivated"
                 @click="activateReadMore"
-                href="#detail"
+                href="/detail"
               >Read More</b-button>
               <p v-if="readMoreActivated" v-html="longText"></p>
             </div>
