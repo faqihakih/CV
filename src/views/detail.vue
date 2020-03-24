@@ -6,10 +6,10 @@
                     <b-img @click="fullWidthImage = !fullWidthImage" src="/assets/logo.png" fluid alt="Klien">
                     </b-img>
                 </div>
-                <div class="col-md-6" style="border-left: 3px #232428 solid; height: auto; width: 2px;">
+                <div class="col-md-6 gaya">
                     <div class="deskripsi">
                         <h1>Name of Product</h1>
-                        <hr style="border-bottom:solid 3px #232428; width: 50%; margin-left: 0%"/>
+                        <hr/>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt pariatur asperiores ullam
                             sunt, modi officia eius suscipit similique iusto dolorem. Porro aperiam hic ea molestias vitae
@@ -70,21 +70,50 @@ data() {
     }
     .detail{
         background: #1B1A1F;
-        height: 639px;
+        height: fit-content;
+        padding-bottom: 71px;
+        /* display: flex; */
+        /* order: 1; */
     }
-    /* hr {
-        border-bottom:solid 3px #cccccc;
-    } */
+    .gaya{
+        border-left: 3px #232428 solid;
+    }
+    hr {
+     border-bottom:solid 3px #232428;
+     width: 50%;
+     margin-left: 0%
+    }
     .deck{
         padding-top: 60px;
     }
     .deskripsi{
         color: white;
         font-family: "Gilroy-Light", sans-serif;
+        /* height: auto;
+        width: 2px; */
     }
     .full{
         text-align: center;
         /* justify-content:  center; */
         align-self: center;
+    }
+    @media screen and (max-width: 800px) {
+        .detail{
+            background: #1B1A1F;
+            height: fit-content;
+        }
+        .deskripsi{
+            color: white;
+            font-family: "Gilroy-Light", sans-serif;
+            text-align: center;
+        }
+        .gaya{
+         border: none;
+        }
+        hr {
+        border-bottom:solid 3px #232428;
+        width: 50%;
+        margin-left: 25%
+        }   
     }
 </style>
