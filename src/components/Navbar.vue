@@ -38,7 +38,7 @@ export default {
 <style scoped>
 *{
     background-color:  #1b1a1f;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-family: 'Gilroy-Bold',sans-serif;
     width: auto;
 }
