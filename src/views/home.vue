@@ -1,5 +1,5 @@
 <template>
-  <v-app id="home">
+  <div id="home">
     <Nav/>
     <Home/>
     <Team/>
@@ -8,7 +8,7 @@
     <Product/>
     <Kontak/>
     <Footer/>
-  </v-app>
+  </div>
 </template>
 
 <script>

@@ -50,6 +50,9 @@ export default {
     font-family: "Gilroy-Bold";
     src: url('/assets/Gilroy-ExtraBold.otf');
   }
+.container .logo{
+  margin-left: auto;
+}
 .logo >img{
     height: 35px;
     width: auto;

@@ -60,7 +60,7 @@ export default {
 
 .wave {
   margin-top: -450px;
-  /* width: 1350px !important; */
+  /* width: 100%px !important; */
 }
 
 .jumbotron {
