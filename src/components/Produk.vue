@@ -54,7 +54,7 @@
 
 <script>
 // import detail from '../views/detail'
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "Produk",
@@ -76,22 +76,22 @@ export default {
     activateReadMore() {
       this.readMoreActivated = true;
     },
-    created() {
-      axios
-        .get("http://192.168.18.45:8000/api/product")
-        .then(response => {
-          this.products = response.data.results;
-          // console.log(this.products);
-        })
-        .catch(e => {
-          console.log(e);
-        });
-    }
+    // created() {
+    //   axios
+    //     .get("http://192.168.18.45:8000/api/product")
+    //     .then(response => {
+    //       this.products = response.data.results;
+    //       // console.log(this.products);
+    //     })
+    //     .catch(e => {
+    //       console.log(e);
+    //     });
+    // }
   },
-  mounted() {
-    this.created()
-    this.imgProduct = "http://192.168.18.45:8000/"          
-  }
+  // mounted() {
+  //   this.created()
+  //   this.imgProduct = "http://192.168.18.45:8000/"          
+  // }
 };
 </script>
 
