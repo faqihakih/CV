@@ -1,14 +1,14 @@
 <template>
 <div>
-  <b-navbar toggleable="lg" class="header" type="dark" fixed="top">
-    <div class="container logo">
-    <b-img src="https://raw.githubusercontent.com/faqihakih/Img/master/plugin.png"
-    alt="Plug-IN"></b-img>
+  <b-navbar toggleable="sm" type="dark" fixed="top">
+    <b-container>
+    <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+    <b-navbar-brand class="logo">
+      <b-img src="https://raw.githubusercontent.com/faqihakih/Img/master/plugin.png"
+      alt="Plug-IN"></b-img>
+    </b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-    
+    <b-collapse id="nav-text-collapse" is-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto nav-item">
         <b-nav-item href="#team">Tim</b-nav-item>
@@ -19,7 +19,7 @@
         <b-nav-item href="#kontak">Kontak</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
-    </div>
+    </b-container>
   </b-navbar>
 </div>
 </template>
@@ -50,19 +50,19 @@ export default {
     font-family: "Gilroy-Bold";
     src: url('/assets/Gilroy-ExtraBold.otf');
   }
-.container .logo{
+/* .container .logo{
   margin-left: auto;
-}
+} */
 .logo >img{
     height: 35px;
     width: auto;
 }
-.header{
+/* .header{
     color: #ffffff !important;
 }
 navbar-item{
   color: #ffffff !important;
 
-}
+} */
  
 </style>
